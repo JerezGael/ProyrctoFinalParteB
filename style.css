@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Esto es un comentario */
 /* 2. Paleta de colores y Tipografía */
 :root {
     --color-primario: #2c3e50;
@@ -31,7 +31,7 @@ th, td {
     padding: 10px;
     text-align: left;
 }
-
+/* soy yo*/
 th {
     background-color: var(--color-primario);
     color: white;
