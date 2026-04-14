@@ -59,3 +59,16 @@ button {
     cursor: pointer;
 }
 /* Comentario final para activar PR */
+/* --- Tarea Estudiante B: Media Queries --- */
+@media (max-width: 600px) {
+    /* Hace que la tabla y el formulario ocupen todo el ancho en móviles */
+    table, form {
+        width: 100% !important;
+        display: block;
+    }
+    
+    /* Cambia el color de fondo para verificar el cambio en móvil */
+    body {
+        background-color: #e8f4f8; 
+    }
+}
