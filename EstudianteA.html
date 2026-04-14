@@ -1,88 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- HOLA MUNDO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Web con Estructura Semántica</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header, footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        nav {
-            background-color: #444;
-            padding: 1em;
-        }
-        nav a {
-            color: white;
-            margin: 0 1em;
-            text-decoration: none;
-        }
-        main {
-            padding: 2em;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1em;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <title>Proyecto Final - Git + HTML/CSS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Bienvenido a Mi Página Web</h1>
+        <h1>Panel de Control de Redes</h1>
     </header>
 
     <nav>
         <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
+        <a href="#tabla">Datos</a>
+        <a href="#galeria">Galería</a>
         <a href="#contacto">Contacto</a>
     </nav>
-<!-- NO MOVER PARA QUE NO SE DAÑE-->
+
     <main>
         <section id="inicio">
-            <h2>Inicio</h2>
-            <p>Esta es la sección de inicio de la página web.</p>
-        </section>
-
-        <section id="servicios">
-            <h2>Servicios</h2>
-            <p>Aquí puedes encontrar información sobre nuestros servicios.</p>
-        </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Ponte en contacto con nosotros para más información.</p>
+            <h2>Bienvenido</h2>
+            <p>Configuración y monitoreo de infraestructura de red local.</p>
         </section>
 
         <section id="tabla">
-            <h2>Tabla de Datos Ficticios</h2>
+            <h2>Dispositivos Conectados</h2>
             <table>
                 <thead>
                     <tr>
                         <th>ID</th>
                         <th>Nombre</th>
-                        <th>Edad</th>
-                        <th>Ciudad</th>
-                        <th>Profesión</th>
+                        <th>Edad/Tiempo</th>
+                        <th>Ciudad/Sede</th>
+                        <th>Profesión/Cargo</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -112,25 +64,48 @@
                         <td>Laura Martínez</td>
                         <td>29</td>
                         <td>Sevilla</td>
-                        <td>
-<section id="galeria">
-    <h2>Galería de GIFs Animados</h2>
-    <div class="contenedor-grid">
-        <div class="tarjeta">
-            <img src="https://media1.tenor.com/m/7UKg29bKKwAAAAAC/sonic-meme-black-sonic.gif" alt="Tech GIF 1">
-            <p>Innovación</p>
-        </div>
-        <div class="tarjeta">
-            <img src="https://media1.tenor.com/m/lxSjtlze2CsAAAAC/skeleton-mad-skeleton.gif" alt="Tech GIF 2">
-            <p>Desarrollo</p>
-        </div>
-        <div class="tarjeta">
-            <img src="https://media1.tenor.com/m/FNW2bRmbhfsAAAAC/pala-homet.gif" alt="Tech GIF 3">
-            <p>Sistemas</p>
-        </div>
-        <div class="tarjeta">
-            <img src="https://media1.tenor.com/m/SJCFWU5whyEAAAAd/doom-slayer-doom-slayer-taunt.gif" alt="Tech GIF 4">
-            <p>Conectividad</p>
-        </div>
-    </div>
-</section>
+                        <td>Abogada</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería de Monitoreo Animada</h2>
+            <div class="contenedor-grid">
+                <div class="tarjeta">
+                    <img src="https://media1.tenor.com/m/7UKg29bKKwAAAAAC/sonic-meme-black-sonic.gif" alt="GIF 1">
+                    <p>Innovación</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="https://media1.tenor.com/m/lxSjtlze2CsAAAAC/skeleton-mad-skeleton.gif" alt="GIF 2">
+                    <p>Desarrollo</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="https://media1.tenor.com/m/FNW2bRmbhfsAAAAC/pala-homet.gif" alt="GIF 3">
+                    <p>Sistemas</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="https://media1.tenor.com/m/SJCFWU5whyEAAAAd/doom-slayer-doom-slayer-taunt.gif" alt="GIF 4">
+                    <p>Conectividad</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto de Soporte</h2>
+            <form>
+                <input type="text" placeholder="Nombre completo">
+                <input type="email" placeholder="Correo electrónico">
+                <textarea placeholder="Descripción del problema"></textarea>
+                <button type="button">Enviar Reporte</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Proyecto Colaborativo Estudiante A y B</p>
+    </footer>
+
+</body>
+</html>
