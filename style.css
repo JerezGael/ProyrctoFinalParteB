@@ -72,3 +72,20 @@ button {
         background-color: #e8f4f8; 
     }
 }
+/* Estilos de la Galería - Estudiante A */
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tarjeta {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
