@@ -1,115 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- HOLA MUNDO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Web con Estructura Semántica</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header, footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        nav {
-            background-color: #444;
-            padding: 1em;
-        }
-        nav a {
-            color: white;
-            margin: 0 1em;
-            text-decoration: none;
-        }
-        main {
-            padding: 2em;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1em;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <title>NetAdmin - Panel de Control Pro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Bienvenido a Mi Página Web</h1>
+        <h1>Panel de Control de Redes</h1>
     </header>
 
     <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#contacto">Contacto</a>
+        <div class="nav-container">
+            <a href="#inicio">Inicio</a>
+            <a href="#tabla">Datos</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+        </div>
     </nav>
-<!-- NO MOVER PARA QUE NO SE DAÑE-->
+
     <main>
         <section id="inicio">
-            <h2>Inicio</h2>
-            <p>Esta es la sección de inicio de la página web.</p>
-        </section>
-
-        <section id="servicios">
-            <h2>Servicios</h2>
-            <p>Aquí puedes encontrar información sobre nuestros servicios.</p>
-        </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Ponte en contacto con nosotros para más información.</p>
+            <h2>Bienvenido al Sistema</h2>
+            <p>Monitoreo en tiempo real de la infraestructura y nodos de red local de la sucursal.</p>
         </section>
 
         <section id="tabla">
-            <h2>Tabla de Datos Ficticios</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nombre</th>
-                        <th>Edad</th>
-                        <th>Ciudad</th>
-                        <th>Profesión</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Juan Pérez</td>
-                        <td>28</td>
-                        <td>Madrid</td>
-                        <td>Ingeniero</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Ana Gómez</td>
-                        <td>34</td>
-                        <td>Barcelona</td>
-                        <td>Diseñadora</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Carlos Ruiz</td>
-                        <td>45</td>
-                        <td>Valencia</td>
-                        <td>Médico</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Laura Martínez</td>
-                        <td>29</td>
-                        <td>Sevilla</td>
-                        <td>
+            <h2>Dispositivos Conectados</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Dispositivo</th>
+                            <th>Uptime</th>
+                            <th>Sede</th>
+                            <th>Administrador</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>01</td><td>Router-Core</td><td>28h</td><td>Quito Norte</td><td>Gael J.</td></tr>
+                        <tr><td>02</td><td>Switch-L2</td><td>34h</td><td>Guayaquil</td><td>Jonathan O.</td></tr>
+                        <tr><td>03</td><td>Server-Web</td><td>45h</td><td>Quito Sur</td><td>Admin-Root</td></tr>
+                        <tr><td>04</td><td>Firewall-P</td><td>29h</td><td>Manta</td><td>Soporte L1</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería de Estado</h2>
+            <div class="contenedor-grid">
+                <div class="tarjeta">
+                    <img src="https://media1.tenor.com/m/7UKg29bKKwAAAAAC/sonic-meme-black-sonic.gif" alt="Gráfico de alta velocidad">
+                    <div class="tarjeta-info"><p>Innovación</p></div>
+                </div>
+                <div class="tarjeta">
+                    <img src="https://media1.tenor.com/m/lxSjtlze2CsAAAAC/skeleton-mad-skeleton.gif" alt="Alerta de error en servidor">
+                    <div class="tarjeta-info"><p>Depuración</p></div>
+                </div>
+                <div class="tarjeta">
+                    <img src="https://media1.tenor.com/m/FNW2bRmbhfsAAAAC/pala-homet.gif" alt="Mantenimiento de cables">
+                    <div class="tarjeta-info"><p>Sistemas</p></div>
+                </div>
+                <div class="tarjeta">
+                    <img src="https://media1.tenor.com/m/SJCFWU5whyEAAAAd/doom-slayer-doom-slayer-taunt.gif" alt="Protección contra intrusos">
+                    <div class="tarjeta-info"><p>Seguridad</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Soporte Técnico</h2>
+            <div class="form-container">
+                <form action="mailto:pepopolopapolsjerez@gmail.com" method="post" enctype="text/plain" class="form-soporte">
+                    <label for="nombre">Nombre del Operador:</label>
+                    <input type="text" id="nombre" name="Nombre" placeholder="Ej. Gael Jerez" required>
+                    
+                    <label for="correo">Correo de Contacto:</label>
+                    <input type="email" id="correo" name="Email" placeholder="correo@itsqmet.edu.ec" required>
+                    
+                    <label for="mensaje">Descripción de la Incidencia:</label>
+                    <textarea id="mensaje" name="Mensaje" placeholder="Describa la falla del nodo aquí..." required></textarea>
+                    
+                    <button type="submit" class="btn-enviar">Generar Ticket de Soporte</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - ITSQMET | Proyecto: Gael & Jonathan | Desarrollo de Software Nivel 1</p>
+    </footer>
+
+</body>
+</html>
